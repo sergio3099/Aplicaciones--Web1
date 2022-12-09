@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "../INTERFACES-MAQUETA2"
+		},
+		{
+			"path": "../INTERFACES-MAQUETA1"
+		},
+		{
+			"path": "../INTERFAZ 6"
+		},
+		{
+			"path": "../INTERFAZ 5"
+		},
+		{
+			"path": "../Login-y-registro-con-html-css-js-main"
+		},
+		{
+			"path": "../HORAS"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "FECHA"
+	}
+}
