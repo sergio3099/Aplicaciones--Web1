@@ -1,0 +1,17 @@
+[{
+    "id": 01, 
+    "nombre":"Rodriguez Sergio", 
+    "tipoDocumento":"Cédula", 
+    "nroDocumento":"1313191759", 
+    "correo":"e1313191759@live.uleam.edu.ec", 
+
+}, 
+{ 
+    "id": 002, 
+    "nombre": "Zambrano Angela", 
+    "tipoDocumento":"Cédula", 
+    "nroDocumento":"0941622987", 
+    "correo":"0941622987@live.uleam.edu.ec", 
+    
+}
+]

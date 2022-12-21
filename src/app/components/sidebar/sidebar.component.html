@@ -1,0 +1,63 @@
+<!-- link para los logos -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<!-- Barra lateral que contendrá todas las opciones de navegación por el sistema -->
+<div class="sidebar">
+    <div class="empresa_contenido">
+            <i class='bx bx-building'></i>
+            <div class="logo_nombre">Empresas para Practicas Uleam</div>
+        </div>
+        <!-- Boton para desplegar o plegar la barra lateral -->
+        <i class='bx bx-menu' id="btn"></i>
+    </div>
+    <!-- Lista de navegacion de las opciones del sistema-->
+    <!-- se usó logos <i></i> en cada item para que se vea más fachero, 
+    estos proporcionados por la pagina boxicons-->
+    <ul class="nav_list">
+        <li>
+                <!-- item Buscar -->
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Buscar...">
+                <span class="info_herramienta">Buscar</span>
+        </li>
+        <li>
+            <a routerLink="/lista-empresas"> <!-- Redireccionará a la página de lista de empresas-->
+                <i class='bx bx-slider'></i>
+                <span class="nombre_link">Lista Empresas</span>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/ingreso-practicas"> <!-- Redireccionará a la página de ingreso a practicas-->
+                <i class='bx bx-cog' ></i>
+                <span class="nombre_link">Ingreso a Practicas</span>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/Horas--"> <!-- Redireccionará a la página de horas-->
+                <i class='bx bx-bar-chart-alt-2'></i>
+                <span class="nombre_link">Horas</span>
+            </a>
+        </li>
+        <li>
+            <a routerLink="/Estudiante"> <!-- Redireccionará a la página de estudiante-->
+                <i class='bx bx-group'></i>
+                <span class="nombre_link">Estudiante</span>
+            </a>
+        </li>
+    </ul>
+    <!-- Esta parte mostrará el usuario que haya iniciado sesión en el sistema-->
+    <div class="perfil_contenido">
+        <div class="perfil">
+            <div class="perfil_detalles">
+                <!-- foto respectiva del usuario -->
+                <img src="perfil.jpg" alt="">
+                <div class="nombre_trabajo">
+                    <!-- Nombre y rol respectivos del usuario -->
+                    <div class="nombre">Erick Toala</div>
+                    <div class="rol">Administrador</div>
+                </div>
+            </div>
+            <!-- icono para la opción de cerrar sesión-->
+            <i class='bx bx-log-out' id="salir"></i>
+        </div>   
+    </div>
+</div>

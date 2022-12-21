@@ -1,0 +1,135 @@
+<!-- contenido principal del sistema-->
+<div class="inicio_contenido">
+    <div class="contenido_pagina">
+        <div class="tarjeta sombra mb-4">
+            <div class="tarjeta_encabezado py-3 fondo_primario">
+                <h6 class="margen0 fuente_negrita texto_blanco">Ingreso Estudiante</h6>
+            </div>
+            <div class="tarjeta_cuerpo">
+                <div class="fila">
+                    <div class="columna_tipo12">
+                        <button class="cta btn btn-success btn-sm" type="button" onclick="abrirModal(null)">Crear Nuevo</button>
+                    </div>
+                </div>
+                <hr />
+                <div class="fila">
+                    <div class="columna_tipo12">
+                        <div class="tabla_responsiva">
+                            <table class="tabla tabla_bordes" id="tabla" style="width:100%" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Tipo Documento</th>
+                                        <th>Nro Documento</th>
+                                        <th>Nombre</th>
+                                        <th>Apellido</th>
+                                        <th>Correo</th>
+                                        <th>Empresa</th>
+                                    </tr>
+                                </thead>
+                                <!-- con el for se recorrerá cada uno de los clientes del archivo json-->
+                                <thead *ngFor="let snkChar of Clientes">
+                                    <tr>
+                                        <!-- se cargará todos los datos del archivo json-->
+                                        <th style="font-weight: 100;">{{snkChar.tipoDocumento}}</th>
+                                        <th style="font-weight: 100;">{{snkChar.nroDocumento}}</th> 
+                                        <th style="font-weight: 100;">{{snkChar.nombre}}</th> 
+                                        <th style="font-weight: 100;">{{snkChar.apellido}}</th> 
+                                        <th style="font-weight: 100;">{{snkChar.correo}}</th> 
+                                        <th style="font-weight: 100;">{{snkChar.empresa}}</th> 
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th>Tipo Documento</th>
+                                        <th>Nro Documento</th>
+                                        <th>Nombre</th>
+                                        <th>Apellido</th>
+                                        <th>Correo</th>
+                                        <th>Empresa</th>
+                                    </tr>
+                                </tfoot>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    
+        <div class="modal-container">
+            <div class="modal modal-close">
+                <div class="ventana_modal_contenido">
+                    <div class="ventana_modal_encabezado fondo_primario texto_blanco">
+                        <h5 class="ventana_modal_titulo" id="exampleModalLabel">Estudiante</h5>
+                    </div>
+                    <div class="ventana_modal_cuerpo">
+                        <input id="txtid" type="hidden" value="0" />
+                        <form id="formNivel">
+                            <div class="fila">
+                                <div class="columna_tipo12">
+                                    <div class="grupo_form">
+                                        <label for="txtdescripcion">Tipo Documento:</label>
+                                        <select class="control_entrada" id="cbotipodocumento">
+                                            <option value="DNI">DNI</option>
+                                            <option value="PASAPORTE">PASAPORTE</option>
+                                            <option value="CARNET EXTRANJERIA">Cedula de Identidad</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fila">
+                                <div class="columna_tipo12">
+                                    <div class="grupo_form">
+                                        <label for="txtdescripcion">Nro Documento:</label>
+                                        <input type="text" class="control_entrada required" id="txtdocumento" name="descripcion" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fila">
+                                <div class="columna_tipo12">
+                                    <div class="grupo_form">
+                                        <label for="txtdescripcion">Nombre:</label>
+                                        <input type="text" class="control_entrada required" id="txtnombre" name="descripcion" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fila">
+                                <div class="columna_tipo12">
+                                    <div class="grupo_form">
+                                        <label for="txtdescripcion">Apellido:</label>
+                                        <input type="text" class="control_entrada required" id="txtapellido" name="descripcion" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fila">
+                                <div class="columna_tipo12">
+                                    <div class="grupo_form">
+                                        <label for="txtdescripcion">Correo:</label>
+                                        <input type="text" class="control_entrada required" id="txtcorreo" name="descripcion" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fila">
+                                <div class="columna_tipo12">
+                                    <div class="grupo_form">
+                                        <label for="txtdescripcion">Empresa</label>
+                                        <input type="text" class="control_entrada required" id="txtcorreo" name="descripcion" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                           
+    
+                        </form>
+    
+                    </div>
+                    <div class="ventana_modal_piePagina">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" onclick="Guardar()">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        
+    </div>
+</div>

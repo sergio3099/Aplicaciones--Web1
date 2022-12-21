@@ -1,0 +1,81 @@
+<!-- contenido principal del sistema-->
+<div class="inicio_contenido">
+    <div class="contenido_pagina">
+        <div class="tarjeta sombra mb-4">
+            <div class="tarjeta_encabezado py-3 fondo_primario">
+                <h6 class="margen0 fuente_negrita texto_blanco">Horas registradas</h6>
+            </div>
+            <div class="tarjeta_cuerpo">
+                <div class="fila">
+                    <div class="columna_tipo12">
+                        <button class="cta btn btn-success btn-sm" type="button" onclick="abrirModal(null)">Crear Nuevo</button>                    </div>
+                </div>
+                <hr />
+                <div class="fila">
+                    <div class="columna_tipo12">
+                        <div class="tabla_responsiva">
+                            <table class="tabla tabla_bordes" id="tabla" style="width:100%" cellspacing="0">
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        <div class="modal-container">
+            <div class="modal modal-close">
+                <div class="ventana_modal_contenido">
+                    <div class="ventana_modal_cuerpo">
+                        <input id="txtid" type="hidden" value="0" />
+                        <form id="formNivel">
+                            <div class="fila">
+                                <div class="columna_tipo12">
+                                    <div class="fila">
+                                        <div class="columna_tipo12">
+                                            <div class="grupo_form">
+                                                <label for="txtdescripcion">Empresa:</label>
+                                                <input type="text" class="control_entrada required" id="txtnumero" name="descripcion" autocomplete="off">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grupo_form">
+                                        <label for="txtdescripcion">Numero de Cedula:</label>
+                                        <input type="text" class="control_entrada required" id="txtnumero" name="descripcion" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fila">
+                                <div class="columna_tipo12">
+                                    <div class="grupo_form">
+                                        <label for="txtdescripcion">Nombre Estudiante:</label>
+                                        <input type="text" class="control_entrada required" id="txtnumero" name="descripcion" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fila">
+                                <div class="columna_tipo12">
+                                    <div class="grupo_form">
+                                        <label for="txtdescripcion">Observaciones:</label>
+                                        <input type="text" class="control_entrada required" id="txtnombre" name="descripcion" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fila">
+                                <div class="columna_tipo12">
+                                    <div class="grupo_form">
+                                        <label for="txtdescripcion">Numero de Horas:</label>
+                                        <input type="text" class="control_entrada required" id="txtapellido" name="descripcion" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+    
+                    </div>
+                    <div class="ventana_modal_piePagina">
+                        <button type="button" class="btn btn-primary" onclick="Guardar()">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
